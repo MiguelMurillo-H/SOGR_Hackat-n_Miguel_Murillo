@@ -12,8 +12,8 @@ Este repositorio contiene las evidencias y soluciones correspondientes a la Hack
 
 | Prueba | Código Asignado | Estado |
 | :--- | :--- | :--- |
-| **Google** | `GOOGLE-04` | En desarrollo |
-| **Anthropic** | `ANTHROPIC-04` | En desarrollo |
+| **Google** | `GOOGLE-04` | Pendiente |
+| **Anthropic** | `ANTHROPIC-04` | ✅ Completada (5/5) |
 
 ---
 
@@ -37,13 +37,7 @@ Este repositorio contiene las evidencias y soluciones correspondientes a la Hack
 ![Ingreso Google](evidencias/google-ingreso.png)
 
 ### 1.2 Ejercicios y Salidas de Ejecución
-*(Se completará con el detalle de cada ejercicio resuelto y la captura de su salida correcta)*
-
-* **Ejercicio 1:**
-  * Descripción breve:
-  * Archivo fuente: [`google/`](google/)
-  * Salida esperada / obtenida:
-  ![Salida Ejercicio 1 Google](evidencias/google-ejercicio-1.png)
+*(Se completará a continuación)*
 
 ---
 
@@ -55,13 +49,36 @@ Este repositorio contiene las evidencias y soluciones correspondientes a la Hack
 ![Ingreso Anthropic](evidencias/anthropic-ingreso.png)
 
 ### 2.2 Ejercicios y Salidas de Ejecución
-*(Se completará con el detalle de cada ejercicio resuelto y la captura de su salida correcta)*
 
-* **Ejercicio 1:**
-  * Descripción breve:
-  * Archivo fuente: [`anthropic/`](anthropic/)
-  * Salida esperada / obtenida:
-  ![Salida Ejercicio 1 Anthropic](evidencias/anthropic-ejercicio-1.png)
+* **Ejercicio A · Respuesta en streaming:**
+  * **Descripción:** Reconstrucción de mensajes en streaming procesando eventos Server-Sent Events (`message_start`, `content_block_delta`, `message_delta`, `message_stop`), tokens de entrada/salida y motivos de finalización.
+  * **Archivo fuente:** [`anthropic/ejercicio_a.py`](anthropic/ejercicio_a.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio A](evidencias/anthropic-ejercicio-a.png)
+
+* **Ejercicio B · Uso de herramientas (Tool Use):**
+  * **Descripción:** Ejecución ordenada de herramientas solicitadas por el modelo (`calculadora`, `clima`) controlando casos de error (división por cero, ciudades u operaciones no registradas) y reporte final de llamadas y fallos.
+  * **Archivo fuente:** [`anthropic/ejercicio_b.py`](anthropic/ejercicio_b.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio B](evidencias/anthropic-ejercicio-b.png)
+
+* **Ejercicio C · Costos con caché de prompts:**
+  * **Descripción:** Cálculo exacto de costos en microdólares por solicitud según uso de tokens regulares, creación de caché (1.25x) y lectura de caché (0.10x), junto con el cálculo de ahorro total y tasa de aciertos de caché.
+  * **Archivo fuente:** [`anthropic/ejercicio_c.py`](anthropic/ejercicio_c.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio C](evidencias/anthropic-ejercicio-c.png)
+
+* **Ejercicio D · Límites de velocidad (Rate limits):**
+  * **Descripción:** Algoritmo de Token Bucket para control de límites de velocidad (solicitudes por segundo y tokens de entrada), respondiendo `ok` o calculando el tiempo de espera entero hacia arriba (`429 retry-after=N`).
+  * **Archivo fuente:** [`anthropic/ejercicio_d.py`](anthropic/ejercicio_d.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio D](evidencias/anthropic-ejercicio-d.png)
+
+* **Ejercicio E · Evaluación de respuestas:**
+  * **Descripción:** Normalización de cadenas y verificación de coincidencia por palabras completas agrupando por categorías alfabéticas y calculando porcentaje total de aprobación.
+  * **Archivo fuente:** [`anthropic/ejercicio_e.py`](anthropic/ejercicio_e.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio E](evidencias/anthropic-ejercicio-e.png)
 
 ---
 
