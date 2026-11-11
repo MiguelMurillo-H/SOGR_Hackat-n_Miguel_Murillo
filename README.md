@@ -1,6 +1,6 @@
 # SOGR Hackatón Individual 2026-2
 
-**Estudiante:** Miguel Angel Murillo Hurtado 
+**Estudiante:** Miguel Angel Murillo Hurtado  
 **Curso:** SOGR 4 (2026-2)  
 **Profesor:** Andrés Martín Cantor Urrego  
 
@@ -10,7 +10,7 @@ Este repositorio contiene las evidencias y soluciones correspondientes a la Hack
 
 | Prueba | Código Asignado | Estado |
 | :--- | :--- | :--- |
-| **Google** | `GOOGLE-04` | Pendiente |
+| **Google** | `GOOGLE-04` | Completada (5/5) |
 | **Anthropic** | `ANTHROPIC-04` | Completada (5/5) |
 
 ## Estructura del Repositorio
@@ -31,8 +31,36 @@ Este repositorio contiene las evidencias y soluciones correspondientes a la Hack
 ![Ingreso Google](evidencias/google-ingreso.png)
 
 ### 1.2 Ejercicios y Salidas de Ejecución
-*(Se completará a continuación)*
 
+* **Ejercicio A · d1000000:**
+  * **Descripción:** Determinación de la longitud máxima de una escalera consecutiva a partir de $N$ dados ordenados de menor a mayor mediante un enfoque voraz (greedy).
+  * **Archivo fuente:** [`google/ejercicio_a.py`](google/ejercicio_a.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio A](evidencias/google-ejercicio-a.png)
+
+* **Ejercicio B · Moons and Umbrellas:**
+  * **Descripción:** Minimización del costo de transiciones entre caracteres contiguos mediante Programación Dinámica lineal en una cadena con caracteres indeterminados (`?`).
+  * **Archivo fuente:** [`google/ejercicio_b.py`](google/ejercicio_b.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio B](evidencias/google-ejercicio-b.png)
+
+* **Ejercicio C · Parenting Partnering Returns:**
+  * **Descripción:** Asignación de intervalos temporales entre dos personas (Cameron y Jamie) ordenando por tiempo de inicio para evitar solapamientos, o determinando imposibilidad.
+  * **Archivo fuente:** [`google/ejercicio_c.py`](google/ejercicio_c.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio C](evidencias/google-ejercicio-c.png)
+
+* **Ejercicio D · Chain Reactions:**
+  * **Descripción:** Recorrido en estructura arbórea (DFS / DP sobre árboles) de abajo hacia arriba para maximizar el factor de diversión acumulado de iniciadores que desembocan en el abismo.
+  * **Archivo fuente:** [`google/ejercicio_d.py`](google/ejercicio_d.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio D](evidencias/google-ejercicio-d.png)
+
+* **Ejercicio E · Bathroom Stalls:**
+  * **Descripción:** Simulación eficiente de división de intervalos para valores grandes ($10^{18}$) utilizando un mapa de frecuencias para determinar las distancias mínimas y máximas de la última persona en entrar.
+  * **Archivo fuente:** [`google/ejercicio_e.py`](google/ejercicio_e.py)
+  * **Salida obtenida:**  
+  ![Salida Ejercicio E](evidencias/google-ejercicio-e.png)
 
 ## 2. Prueba Anthropic (`ANTHROPIC-04`)
 
